@@ -1,7 +1,7 @@
 {
   "name": "سورس سيمو",
   "description": "اللهم صلِ على محمد وآل محمد",
-  "logo": "https://telegra.ph/file/83ee584aef1c4db1d9597.jpg",
+  "logo": "https://telegra.ph/file/eeddebe1341d5dc2f6893.jpg",
   "keywords": [
     "plugin",
     "modular",
@@ -41,7 +41,7 @@
     },
     "TZ": {
       "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
-      "value": "Asia/Baghdad",
+      "value": "Africa/Cairo",
       "required": false
     }
   },
