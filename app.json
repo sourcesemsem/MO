@@ -1,13 +1,13 @@
 {
-  "name": "سورس سيمو",
+  "name": "سورس سيمو | Source Semo",
   "description": "اللهم صلِ على محمد وآل محمد",
-  "logo": "https://telegra.ph/file/eeddebe1341d5dc2f6893.jpg",
+  "logo": "https://telegra.ph/file/972948abef63b2f59f11f.jpg",
   "keywords": [
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/sourcesemsem/MO/",
+  "repository": "https://github.com/sourcesemsem/H_S/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -31,9 +31,15 @@
       "description": "هنا ضع كود سيشن تيليثون كود تيرمكس الخاص بك",
       "value": ""
     },
-    "TG_BOT_USERNAME": {
-      "description": "هنا ضع معرف بوتك بدون @",
-      "value": ""
+    "HEROKU_API_KEY": {
+      "description": "هنا ضع الايبي كي الخاص بحساب هيروكو من هذا الرابط https://dashboard.heroku.com/account",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق اول مربع كتبته خلي هنا نفسه وحروف صغيره",
+      "value": "",
+      "required": false
     },
     "TG_BOT_TOKEN": {
       "description": "هنا ضع توكن بوتك الذي صنعته",
