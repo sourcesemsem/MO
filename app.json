@@ -1,13 +1,13 @@
 {
-  "name": "سورس سيمو | Source Semo",
+  "name": "سورس الجوكر المجاني | Source AL-Joker Free",
   "description": "اللهم صلِ على محمد وآل محمد",
-  "logo": "https://telegra.ph/file/972948abef63b2f59f11f.jpg",
+  "logo": "https://telegra.ph/file/83ee584aef1c4db1d9597.jpg",
   "keywords": [
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/sourcesemsem/H_S/",
+  "repository": "https://github.com/sourcesemsem/MO/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -41,13 +41,17 @@
       "value": "",
       "required": false
     },
+    "TG_BOT_USERNAME": {
+      "description": "هنا ضع معرف بوتك بدون @",
+      "value": ""
+    },
     "TG_BOT_TOKEN": {
       "description": "هنا ضع توكن بوتك الذي صنعته",
       "value": ""
     },
     "TZ": {
       "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
-      "value": "Africa/Cairo",
+      "value": "Asia/Baghdad",
       "required": false
     }
   },
