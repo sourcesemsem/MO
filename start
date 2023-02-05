@@ -4,7 +4,7 @@
 _get_ziplink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "SEMO" ]]
+    if [[ $UPSTREAM_REPO == "jepthoniq" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL3NvdXJjZXNlbXNlbS9IX1MvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -13,7 +13,7 @@ _get_ziplink () {
         then
             echo "${UPSTREAM_REPO}/archive/${UPSTREAM_REPO_BRANCH}.zip"
         else
-            echo "${UPSTREAM_REPO}/archive/master.zip"
+            echo "${UPSTREAM_REPO}/archive/Heroku.zip"
         fi
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL3NvdXJjZXNlbXNlbS9IX1MvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
@@ -24,7 +24,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "SEMO" ]]
+    if [[ $UPSTREAM_REPO == "jepthoniq" ]]
     then
         rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3NvdXJjZXNlbXNlbS9IX1MuZ2l0" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -45,7 +45,7 @@ _run_catpack_git() {
     $(_run_python_code 'from git import Repo
 import sys
 OFFICIAL_UPSTREAM_REPO = "https://github.com/sourcesemsem/H_S"
-ACTIVE_BRANCH_NAME = "master"
+ACTIVE_BRANCH_NAME = "Heroku"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
 origin.fetch()
@@ -58,7 +58,7 @@ _run_cat_git() {
     $(_run_python_code 'from git import Repo
 import sys
 OFFICIAL_UPSTREAM_REPO="'$repolink'"
-ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "master"
+ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "Heroku"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
 origin.fetch()
@@ -68,7 +68,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _set_bot () {
     local zippath
-    zippath="jepthon.zip"
+    zippath="joker.zip"
     echo "جاري تنزيل اكواد السورس "
     wget -q $(_get_ziplink) -O "$zippath"
     echo " تفريغ البيانات "
@@ -87,7 +87,7 @@ _set_bot () {
     echo "
 
     "
-    python3 -m jepthon
+    python3 -m joker
 }
 
 _set_bot
